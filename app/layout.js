@@ -9,12 +9,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ko" className="dark">
-      <head>
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
-        />
-      </head>
       <body className={`${notosansRegular.className}`}>{children}</body>
     </html>
   );

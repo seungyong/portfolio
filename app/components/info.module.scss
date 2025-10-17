@@ -1,0 +1,17 @@
+.info {
+  margin-top: 10rem;
+
+  .title {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .content {
+    .profileImg {
+      width: 25rem;
+      height: 30rem;
+      object-fit: cover;
+      margin-bottom: 2rem;
+    }
+  }
+}

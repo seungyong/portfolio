@@ -1,13 +1,18 @@
 import React from "react";
 
-import { Button } from "@/components/ui/button";
+import Top from "@/app/components/top";
+import Skills from "@/app/components/skills";
+import Info from "@/app/components/info";
+
+import styles from "./page.module.scss";
 
 const page = () => {
   return (
-    <>
-      <div>김승용</div>
-      <div>page</div>
-    </>
+    <section className={styles.center}>
+      <Top />
+      <Info />
+      {/* <Skills /> */}
+    </section>
   );
 };
 

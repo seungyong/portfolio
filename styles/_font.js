@@ -1,4 +1,4 @@
-import { Do_Hyeon, Noto_Sans_Mono } from "next/font/google";
+import { Black_Han_Sans, Noto_Sans_Mono } from "next/font/google";
 
 export const notosansRegular = Noto_Sans_Mono({
   subsets: ["latin"],
@@ -15,7 +15,8 @@ export const notosansBold = Noto_Sans_Mono({
   weight: ["700"],
 });
 
-export const doHyeon = Do_Hyeon({
+export const blackHanSans = Black_Han_Sans({
   subsets: ["latin"],
   weight: ["400"],
+  variable: "--font-black-han-sans",
 });
