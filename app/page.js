@@ -1,7 +1,7 @@
 import React from "react";
 
 import Top from "@/components/top/top";
-// import Skills from "@/app/components/skills";
+import Skills from "@/components/skills/skills";
 import Profile from "@/components/profile/profile";
 
 import styles from "./page.module.scss";
@@ -11,7 +11,7 @@ const page = () => {
     <section className={styles.center}>
       <Top />
       <Profile />
-      {/* <Skills /> */}
+      <Skills />
     </section>
   );
 };

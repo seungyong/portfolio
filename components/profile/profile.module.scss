@@ -1,11 +1,4 @@
 .profile {
-  margin-top: 10rem;
-
-  .title {
-    font-size: 3.5rem;
-    margin-bottom: 2rem;
-  }
-
   .content {
     display: flex;
     justify-content: space-around;
@@ -22,29 +15,6 @@
       flex-direction: column;
       gap: 1.5rem;
     }
-  }
-}
-
-.underline {
-  height: 0.25rem;
-  background-color: #dddddd;
-}
-
-.none {
-  width: 0%;
-}
-
-.scrolled {
-  animation: underlineAnimation 3s forwards;
-}
-
-@keyframes underlineAnimation {
-  0% {
-    width: 0%;
-  }
-
-  100% {
-    width: 100%;
   }
 }
 
