@@ -7,7 +7,6 @@
 
   .info {
     position: absolute;
-    top: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,10 +37,6 @@
 
     .name {
       font-size: 6rem;
-
-      p {
-        margin-left: 3.5rem;
-      }
     }
   }
 }
@@ -52,10 +47,6 @@
 
     .name {
       font-size: 6rem;
-
-      p {
-        margin-left: 0;
-      }
     }
 
     .job {
@@ -87,6 +78,12 @@
 }
 
 @media all and (max-height: 741px) {
+  .info {
+    top: 15%;
+  }
+}
+
+@media all and (max-width: 1022px) and (max-height: 741px) {
   .info {
     .name {
       font-size: 4rem !important;
