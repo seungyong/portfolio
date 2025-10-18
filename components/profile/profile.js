@@ -11,6 +11,7 @@ const Profile = () => {
     { label: "이름", value: "김승용" },
     { label: "이메일", value: "seungyong20@naver.com" },
     { label: "전화번호", value: "010-8529-7193" },
+    { label: "군대", value: "만기전역" },
     { label: "Github", value: "github.com/seungyong", isLink: true },
     { label: "블로그", value: "seungyong20.tistory.com", isLink: true },
   ];

@@ -1,0 +1,110 @@
+.card {
+  .develop {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    li {
+      padding-left: 1.5rem;
+      position: relative;
+      line-height: 1.6;
+      transition: all 0.2s ease;
+
+      &::before {
+        content: "▹";
+        color: #77b1eb;
+        position: absolute;
+        left: 0;
+        font-size: 1.2em;
+        font-weight: bold;
+        transition: transform 0.2s ease;
+      }
+
+      &:hover {
+        padding-left: 1.75rem;
+        color: #77b1eb;
+
+        &::before {
+          transform: translateX(0.25rem);
+        }
+      }
+    }
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .date {
+    .value {
+      margin-left: 0.625rem;
+    }
+  }
+
+  .desc {
+    margin-top: 1rem !important;
+    margin-bottom: 2rem;
+    color: #d1d1d1;
+    font-size: 1rem;
+  }
+
+  .videoContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+    video {
+      width: 60%;
+      height: 25rem;
+      border: none;
+      border-radius: 8px;
+    }
+  }
+
+  .carousel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+    .imageCard {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      background-color: transparent;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  // 버튼 형태
+  .btnBox {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+
+    .linkBtn {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 10px 16px;
+      font-size: 1rem;
+      color: #ffffff;
+      background-color: #444444;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #6e6e6e;
+      }
+    }
+  }
+}
