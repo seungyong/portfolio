@@ -127,6 +127,10 @@ const Project = () => {
           isActive: false,
         },
         {
+          title: "HTML/CSS/JavaScript",
+          isActive: true,
+        },
+        {
           title: "Git / GitHub",
           isActive: true,
         },
@@ -163,6 +167,272 @@ const Project = () => {
         "/algorithm14.png",
       ],
       github: "https://github.com/Seoil-Twins/algorithm",
+    },
+    {
+      name: "PerfectFit",
+      descriptions: [
+        "사용자의 프로젝트 경험, 일 경험, 직업, 프롬프트 등을 기반하여 자기소개서 및 모의 면접을 생성하는 웹 사이트입니다.",
+        "문장에 대한 띄어쓰기, 맞춤법 등을 검사 해주는 기능을 제공합니다.",
+        "각 회사 별 인재상을 추출하고, 회사에 대표적인 직업 5가지를 뽑아 모의 면접 내용을 제공합니다.",
+        "사용자들은 자신의 자기소개서와 모의 면접을 다른 사람들에게 공개할 수 있습니다.",
+      ],
+      role: "백엔드 개발자",
+      date: ["2023.10 - 2024.12"],
+      skills: [
+        {
+          title: "Flask",
+          isActive: true,
+        },
+        {
+          title: "Python",
+          isActive: true,
+        },
+        {
+          title: "openAI/gpt",
+          isActive: true,
+        },
+        {
+          title: "MySQL",
+          isActive: true,
+        },
+        {
+          title: "Redis",
+          isActive: true,
+        },
+        {
+          title: "SQLAlchemy",
+          isActive: true,
+        },
+        {
+          title: "Celery",
+          isActive: true,
+        },
+        {
+          title: "Git / GitHub",
+          isActive: true,
+        },
+      ],
+      develop: [
+        "로그인 및 회원가입",
+        "자기소개서 (목록, 상세, 단락 생성, 단락에 대한 답변 생성) API 개발",
+        "상호 작용 (좋아요, 조회수, 공개 여부 설정) API 개발",
+        "자신의 자기소개서, 모의 면접, 내 정보 API 개발",
+        "면접 선택, 작성, 로딩, 공개 모달창, 진행 디자인",
+        "면접 목록 (기업, 직업, 검색), 면접 상세, 필수 정보 입력 (수정), 선택 정보 입력 (수정) 프론트 개발",
+      ],
+      images: [
+        "/perfectfit01.gif",
+        "/perfectfit02.gif",
+        "/perfectfit03.gif",
+        "/perfectfit04.gif",
+        "/perfectfit05.gif",
+        "/perfectfit06.gif",
+        "/perfectfit07.gif",
+        "/perfectfit08.gif",
+        "/perfectfit09.gif",
+        "/perfectfit10.gif",
+        "/perfectfit11.gif",
+      ],
+      github: "https://github.com/7-wonders/PerfectFit",
+      delay: 6000,
+    },
+    {
+      name: "Forde",
+      descriptions: [
+        "IT 업계 선배, 후배, 동기들의 다양한 경험과 조언을 공유하는 커뮤니티 웹사이트입니다.",
+        "사용자들은 게시글 작성, 댓글 작성, 좋아요 등의 기능을 통해 활발히 소통할 수 있습니다.",
+        "팔로우 기능을 통해 관심 있는 사용자들의 활동을 쉽게 팔로우할 수 있습니다.",
+      ],
+      role: "풀스택 개발자",
+      date: ["2025.02 - 2025.04"],
+      skills: [
+        {
+          title: "Spring Boot",
+          isActive: true,
+        },
+        {
+          title: "Spring Data JPA",
+          isActive: true,
+        },
+        {
+          title: "MariaDB",
+          isActive: true,
+        },
+        {
+          title: "Redis",
+          isActive: true,
+        },
+        {
+          title: "React",
+          isActive: true,
+        },
+        {
+          title: "Typescript",
+          isActive: true,
+        },
+        {
+          title: "AWS RDS",
+          isActive: true,
+        },
+        {
+          title: "HTML/CSS/JavaScript",
+          isActive: true,
+        },
+      ],
+      develop: [
+        "기획",
+        "UI/UX 디자인",
+        "API/DB 설계 및 문서화",
+        "React/TypeScript 기반 웹 애플리케이션 구축 ( 메인 일부,로그인,코드작성 부분 등 )",
+        "컴포넌트 아키텍처 설계 및 개발 ( 게시글 리스트, 댓글 등 컴포넌트 기초 설계 )",
+        "콘텐츠 관리 (게시글 CRUD, 댓글 및 대댓글 시스템, 임시저장 기능) API 개발",
+        "뉴스 및 피드 (최신/일일/월간 뉴스 조회, 추천 콘텐츠, 팔로잉 피드) API 개발",
+        "검색 및 태그 (통합 검색 기능, 태그 관리 및 검색, 인기 태그 조회) API 개발",
+        "상호작용 기능 (좋아요, 게시글 조회수 및 체류시간 추적) 기능 개발",
+      ],
+      images: [
+        "/forde05.png",
+        "/forde06.png",
+        "/forde07.png",
+        "/forde08.png",
+        "/forde09.png",
+        "/forde10.png",
+        "/forde11.png",
+        "/forde12.png",
+        "/forde13.png",
+      ],
+      github: "https://github.com/3-Wonders/Forde-Backend",
+    },
+    {
+      name: "YSY",
+      descriptions: [
+        "커플 간의 일정, 앨범 등을 공유하여 손쉽게 추억을 쌓고 관리할 수 있는 모바일 애플리케이션입니다.",
+      ],
+      role: "백엔드 개발자",
+      date: ["2023.03 - 2023.11"],
+      skills: [
+        {
+          title: "Node JS",
+          isActive: true,
+        },
+        {
+          title: "Express",
+          isActive: true,
+        },
+        {
+          title: "MySQL",
+          isActive: true,
+        },
+        {
+          title: "Redis",
+          isActive: true,
+        },
+        {
+          title: "GCS",
+          isActive: true,
+        },
+        {
+          title: "React Native",
+          isActive: false,
+        },
+      ],
+      develop: [
+        "기획",
+        "UI/UX 디자인",
+        "API/DB 설계 및 문서화",
+        "SNS 로그인",
+        "단일/다중 이미지 업로드 및 관리",
+        "일정 관리",
+        "Batch를 통한 Tour API 호출 및 데이터 저장",
+        "데이트 장소 정렬 및 좋아요",
+      ],
+      images: [
+        "/ysy01.jpg",
+        "/ysy02.jpg",
+        "/ysy03.jpg",
+        "/ysy04.jpg",
+        "/ysy05.jpg",
+        "/ysy06.jpg",
+        "/ysy07.jpg",
+        "/ysy08.jpg",
+        "/ysy09.jpg",
+        "/ysy10.jpg",
+      ],
+      github: "https://github.com/Seoil-Twins/ysy",
+    },
+    {
+      name: "Drone (Object Tracking)",
+      descriptions: [
+        "드론에 장착된 카메라를 통해 실시간으로 객체를 추적하는 시스템입니다.",
+        "OpenCV을 활용하여 특정 객체를 지정하고, 드론이 해당 객체를 지속적으로 추적할 수 있도록 구현하였습니다.",
+      ],
+      role: "풀스택 개발자",
+      date: ["2023.07 - 2023.09"],
+      skills: [
+        {
+          title: "Python",
+          isActive: true,
+        },
+        {
+          title: "Flask",
+          isActive: true,
+        },
+        {
+          title: "DJI Tello SDK",
+          isActive: true,
+        },
+        {
+          title: "OpenCV",
+          isActive: true,
+        },
+        {
+          title: "FFmpeg",
+          isActive: true,
+        },
+        {
+          title: "HTML/CSS/JavaScript",
+          isActive: true,
+        },
+      ],
+      develop: [
+        "드론과의 통신을 위한 Flask 서버 구축",
+        "드론 카메라 스트리밍 데이터 수신 및 처리",
+        "OpenCV를 활용한 객체 인식 및 추적 알고리즘 구현",
+        "드론 제어 명령어 생성 및 전송",
+        "실시간 비디오 스트리밍 및 객체 추적 결과 웹 인터페이스 개발",
+      ],
+      video: "/drone.mp4",
+      github: "https://github.com/seungyong/drone",
+    },
+    {
+      name: "개인 포트폴리오 웹사이트",
+      descriptions: [
+        "자신의 경력, 프로젝트, 기술 스택 등을 효과적으로 소개하는 개인 포트폴리오 웹사이트입니다.",
+        "반응형 디자인을 적용하여 다양한 기기에서 최적의 사용자 경험을 제공합니다.",
+      ],
+      role: "풀스택 개발자",
+      date: ["2025.10 - 현재"],
+      skills: [
+        {
+          title: "React",
+          isActive: true,
+        },
+        {
+          title: "HTML/CSS/JavaScript",
+          isActive: true,
+        },
+        {
+          title: "Vercel",
+          isActive: true,
+        },
+      ],
+      develop: [
+        "UI/UX 디자인",
+        "반응형 웹 구현",
+        "프로젝트 및 경력 소개 페이지 개발",
+        "배포 및 유지보수",
+      ],
+      github: "https://github.com/seungyong/portfolio",
     },
   ];
 

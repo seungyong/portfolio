@@ -77,8 +77,9 @@
 
       img {
         width: 100%;
-        height: auto;
+        max-height: 35rem;
         border-radius: 8px;
+        object-fit: contain;
       }
     }
   }

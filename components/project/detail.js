@@ -70,7 +70,12 @@ const Detail = ({ project }) => {
             <Carousel
               className="w-5/6"
               opts={{ loop: true }}
-              plugins={[AutoPlay({ delay: 4000 })]}
+              plugins={[
+                AutoPlay({
+                  delay: project.delay || 4000,
+                  stopOnFocusIn: true,
+                }),
+              ]}
             >
               <CarouselContent>
                 {project.images.map((image, index) => (
