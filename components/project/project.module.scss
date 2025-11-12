@@ -3,3 +3,56 @@
   flex-direction: column;
   gap: 2rem;
 }
+
+.filterBox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+
+  .totalProjects {
+    font-size: 1rem;
+    color: #c0c0c0;
+    margin-bottom: 0.5rem;
+
+    .totalCount {
+      font-weight: bold;
+      color: #4a90e2;
+    }
+  }
+
+  .divider {
+    margin: 1.5em 0;
+    border: none;
+    border-top: 1px solid #2a2a2a;
+  }
+
+  .filterToggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+    color: #a0a0a0;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    outline: none;
+
+    &:hover {
+      border-color: #4a90e2;
+      color: #ffffff;
+      background: #1f1f1f;
+    }
+
+    &[aria-pressed="true"] {
+      background-color: #4a90e2;
+      color: #ffffff;
+
+      &:hover {
+        background-color: #5a9bd8;
+      }
+    }
+  }
+}

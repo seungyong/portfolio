@@ -32,8 +32,24 @@
     }
   }
 
-  .title {
-    font-size: 2rem;
+  .titleBox {
+    display: flex;
+
+    .title {
+      font-size: 2rem;
+    }
+
+    .important {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 0 0 1rem;
+      padding: 0.25rem 0.5rem;
+      border-radius: 12px;
+      background-color: #ff6b6b;
+      color: #ffffff;
+      font-size: 0.75rem;
+    }
   }
 
   .date {
@@ -106,6 +122,14 @@
       &:hover {
         background-color: #6e6e6e;
       }
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .card {
+    :global(.p-6) {
+      padding: 1rem !important;
     }
   }
 }
