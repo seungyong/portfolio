@@ -1,4 +1,5 @@
 import React from "react";
+import { Analytics } from "@vercel/analytics/next";
 
 import Top from "@/components/top/top";
 import Profile from "@/components/profile/profile";
@@ -12,6 +13,7 @@ import styles from "./page.module.scss";
 const page = () => {
   return (
     <>
+      <Analytics />
       <section className={styles.center}>
         <Top />
         <Profile />
