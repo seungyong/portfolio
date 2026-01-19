@@ -17,10 +17,10 @@ const page = () => {
       <section className={styles.center}>
         <Top />
         <Profile />
+        <Certificate />
+        <Project />
         <Skills />
         <Experience />
-        <Project />
-        <Certificate />
       </section>
       <footer className={`${styles.footer} text-muted-foreground`}>
         © 2025 by Kim Seung Yong. All rights reserved.
