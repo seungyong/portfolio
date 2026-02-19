@@ -69,10 +69,22 @@ const Detail = ({ project }) => {
           </ul>
           {project.video && (
             <div className={styles.videoContainer}>
-              <video controls>
-                <source src={project.video} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              {project.video.includes("youtube") ? (
+                <iframe
+                  width="560"
+                  height="315"
+                  src={project.video}
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              ) : (
+                <video controls>
+                  <source src={project.video} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              )}
             </div>
           )}
           <div className={styles.carousel}>
@@ -111,17 +123,19 @@ const Detail = ({ project }) => {
             )}
           </div>
           <div className={styles.btnBox}>
-            <button className={styles.linkBtn}>
-              <Image src="/github.svg" alt="GitHub" width={24} height={24} />
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.link}
-              >
-                GitHub
-              </a>
-            </button>
+            {project.btns.map((btn, index) => (
+              <button key={index} className={styles.linkBtn}>
+                {btn.svgEle}
+                <a
+                  href={btn.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.link}
+                >
+                  {btn.title}
+                </a>
+              </button>
+            ))}
           </div>
         </CardContent>
       </Card>

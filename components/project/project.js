@@ -6,11 +6,102 @@ import styles from "./project.module.scss";
 
 import Title from "../title/title";
 import Detail from "./detail";
+import Image from "next/image";
 
 const Project = () => {
   const [showImportantOnly, setShowImportantOnly] = useState(false);
   const projects = useMemo(
     () => [
+      {
+        name: "Helpme.md",
+        descriptions: [
+          "취준생 및 학생 등 개발의 입문한 사람들이 README.md 작성에 대한 어려움을 겪는 문제를 해결하기 위해 개발된 웹 애플리케이션입니다.",
+          "사용자들은 Github App을 통해 자신의 프로젝트를 연동하고, 프로젝트의 정보를 읽어 README.md 파일을 자동으로 생성할 수 있습니다.",
+        ],
+        role: "풀스택",
+        date: ["2026.01 - 현재"],
+        skills: [
+          {
+            title: "Spring Boot",
+            isActive: true,
+          },
+          {
+            title: "Spring Data JPA",
+            isActive: true,
+          },
+          {
+            title: "React",
+            isActive: true,
+          },
+          {
+            title: "openAI/gpt",
+            isActive: true,
+          },
+          {
+            title: "Supabase",
+            isActive: true,
+          },
+          {
+            title: "Redis",
+            isActive: true,
+          },
+          {
+            title: "Docker / Docker Compose",
+            isActive: true,
+          },
+          {
+            title: "Git / GitHub",
+            isActive: true,
+          },
+          {
+            title: "Github Actions",
+            isActive: true,
+          },
+          {
+            title: "Vercel",
+            isActive: true,
+          },
+        ],
+        develop: [
+          "기획",
+          "DB 설계",
+          "API 설계",
+          "UI/UX 디자인",
+          "Github App을 통한 프로젝트 연동 기능 개발",
+          "Github API를 활용한 프로젝트 정보 수집 및 분석 (커밋 메시지, 프로젝트 구조, 코드 내용, 기술 스택 분석 등)",
+          "OpenAI GPT API를 활용한 README.md 초안 생성 기능 개발",
+          "OpenAI GPT API를 활용한 프로젝트 중요 파일, 진입점 파일 추출 기능 개발",
+          "사용자 인증 (JWT), README.md 관리 등 주요 기능 API 개발",
+          "Docker를 활용한 개발 및 배포 환경 구축",
+          "Github Actions를 활용한 CI/CD 파이프라인 구축",
+          "Vercel을 활용한 프론트엔드 배포",
+        ],
+        video: "https://www.youtube.com/embed/S2M90_2e1ao?si=MboNt-hRf7ELzcGb",
+        btns: [
+          {
+            title: "Helpme.md",
+            url: "https://helpme.seungyong.co.kr/",
+            svgEle: (
+              <Image src="/helpme.png" alt="Link" width={24} height={24} />
+            ),
+          },
+          {
+            title: "Backend",
+            url: "https://github.com/seungyong/helpme.md-backend",
+            svgEle: (
+              <Image src="/github.svg" alt="GitHub" width={24} height={24} />
+            ),
+          },
+          {
+            title: "Frontend",
+            url: "https://github.com/seungyong/helpme.md-frontend",
+            svgEle: (
+              <Image src="/github.svg" alt="GitHub" width={24} height={24} />
+            ),
+          },
+        ],
+        isImportant: true,
+      },
       {
         name: "Globa",
         descriptions: [
@@ -90,8 +181,93 @@ const Project = () => {
           "우리말샘 Excel을 활용한 단어 검색 기능 개발",
           "AWS EC2, RDS, SQS를 활용한 인프라 구축 및 배포",
         ],
-        video: "/globa.mp4",
-        github: "https://github.com/Globa-Seoil-Univ/globa-backend",
+        video: "https://www.youtube.com/embed/NHepQN2UuM8?si=wdZvYNkz6rRxs0Ob",
+        btns: [
+          {
+            title: "Github",
+            url: "https://github.com/Globa-Seoil-Univ/globa-backend",
+            svgEle: (
+              <Image src="/github.svg" alt="GitHub" width={24} height={24} />
+            ),
+          },
+        ],
+        isImportant: true,
+      },
+      {
+        name: "PerfectFit",
+        descriptions: [
+          "사용자의 프로젝트 경험, 일 경험, 직업, 프롬프트 등을 기반하여 자기소개서 및 모의 면접을 생성하는 웹 사이트입니다.",
+          "문장에 대한 띄어쓰기, 맞춤법 등을 검사 해주는 기능을 제공합니다.",
+          "각 회사 별 인재상을 추출하고, 회사에 대표적인 직업 5가지를 뽑아 모의 면접 내용을 제공합니다.",
+          "사용자들은 자신의 자기소개서와 모의 면접을 다른 사람들에게 공개할 수 있습니다.",
+        ],
+        role: "백엔드 개발자",
+        date: ["2023.10 - 2024.12"],
+        skills: [
+          {
+            title: "Flask",
+            isActive: true,
+          },
+          {
+            title: "Python",
+            isActive: true,
+          },
+          {
+            title: "openAI/gpt",
+            isActive: true,
+          },
+          {
+            title: "MySQL",
+            isActive: true,
+          },
+          {
+            title: "Redis",
+            isActive: true,
+          },
+          {
+            title: "SQLAlchemy",
+            isActive: true,
+          },
+          {
+            title: "Celery",
+            isActive: true,
+          },
+          {
+            title: "Git / GitHub",
+            isActive: true,
+          },
+        ],
+        develop: [
+          "로그인 및 회원가입",
+          "자기소개서 (목록, 상세, 단락 생성, 단락에 대한 답변 생성) API 개발",
+          "상호 작용 (좋아요, 조회수, 공개 여부 설정) API 개발",
+          "자신의 자기소개서, 모의 면접, 내 정보 API 개발",
+          "면접 선택, 작성, 로딩, 공개 모달창, 진행 디자인",
+          "면접 목록 (기업, 직업, 검색), 면접 상세, 필수 정보 입력 (수정), 선택 정보 입력 (수정) 프론트 개발",
+        ],
+        images: [
+          "/perfectfit01.gif",
+          "/perfectfit02.gif",
+          "/perfectfit03.gif",
+          "/perfectfit04.gif",
+          "/perfectfit05.gif",
+          "/perfectfit06.gif",
+          "/perfectfit07.gif",
+          "/perfectfit08.gif",
+          "/perfectfit09.gif",
+          "/perfectfit10.gif",
+          "/perfectfit11.gif",
+        ],
+        btns: [
+          {
+            title: "Github",
+            url: "https://github.com/7-wonders/PerfectFit",
+            svgEle: (
+              <Image src="/github.svg" alt="GitHub" width={24} height={24} />
+            ),
+          },
+        ],
+        delay: 6000,
         isImportant: true,
       },
       {
@@ -171,77 +347,15 @@ const Project = () => {
           "/algorithm13.png",
           "/algorithm14.png",
         ],
-        github: "https://github.com/Seoil-Twins/algorithm",
-        isImportant: true,
-      },
-      {
-        name: "PerfectFit",
-        descriptions: [
-          "사용자의 프로젝트 경험, 일 경험, 직업, 프롬프트 등을 기반하여 자기소개서 및 모의 면접을 생성하는 웹 사이트입니다.",
-          "문장에 대한 띄어쓰기, 맞춤법 등을 검사 해주는 기능을 제공합니다.",
-          "각 회사 별 인재상을 추출하고, 회사에 대표적인 직업 5가지를 뽑아 모의 면접 내용을 제공합니다.",
-          "사용자들은 자신의 자기소개서와 모의 면접을 다른 사람들에게 공개할 수 있습니다.",
-        ],
-        role: "백엔드 개발자",
-        date: ["2023.10 - 2024.12"],
-        skills: [
+        btns: [
           {
-            title: "Flask",
-            isActive: true,
-          },
-          {
-            title: "Python",
-            isActive: true,
-          },
-          {
-            title: "openAI/gpt",
-            isActive: true,
-          },
-          {
-            title: "MySQL",
-            isActive: true,
-          },
-          {
-            title: "Redis",
-            isActive: true,
-          },
-          {
-            title: "SQLAlchemy",
-            isActive: true,
-          },
-          {
-            title: "Celery",
-            isActive: true,
-          },
-          {
-            title: "Git / GitHub",
-            isActive: true,
+            title: "Github",
+            url: "https://github.com/Seoil-Twins/algorithm",
+            svgEle: (
+              <Image src="/github.svg" alt="GitHub" width={24} height={24} />
+            ),
           },
         ],
-        develop: [
-          "로그인 및 회원가입",
-          "자기소개서 (목록, 상세, 단락 생성, 단락에 대한 답변 생성) API 개발",
-          "상호 작용 (좋아요, 조회수, 공개 여부 설정) API 개발",
-          "자신의 자기소개서, 모의 면접, 내 정보 API 개발",
-          "면접 선택, 작성, 로딩, 공개 모달창, 진행 디자인",
-          "면접 목록 (기업, 직업, 검색), 면접 상세, 필수 정보 입력 (수정), 선택 정보 입력 (수정) 프론트 개발",
-        ],
-        images: [
-          "/perfectfit01.gif",
-          "/perfectfit02.gif",
-          "/perfectfit03.gif",
-          "/perfectfit04.gif",
-          "/perfectfit05.gif",
-          "/perfectfit06.gif",
-          "/perfectfit07.gif",
-          "/perfectfit08.gif",
-          "/perfectfit09.gif",
-          "/perfectfit10.gif",
-          "/perfectfit11.gif",
-        ],
-        github: "https://github.com/7-wonders/PerfectFit",
-        delay: 6000,
-        isImportant: true,
       },
       {
         name: "Forde",
@@ -308,7 +422,15 @@ const Project = () => {
           "/forde12.png",
           "/forde13.png",
         ],
-        github: "https://github.com/3-Wonders/Forde-Backend",
+        btns: [
+          {
+            title: "Github",
+            url: "https://github.com/3-Wonders/Forde-Backend",
+            svgEle: (
+              <Image src="/github.svg" alt="GitHub" width={24} height={24} />
+            ),
+          },
+        ],
       },
       {
         name: "YSY",
@@ -365,7 +487,15 @@ const Project = () => {
           "/ysy09.jpg",
           "/ysy10.jpg",
         ],
-        github: "https://github.com/Seoil-Twins/ysy",
+        btns: [
+          {
+            title: "Github",
+            url: "https://github.com/Seoil-Twins/ysy",
+            svgEle: (
+              <Image src="/github.svg" alt="GitHub" width={24} height={24} />
+            ),
+          },
+        ],
       },
       {
         name: "Drone (Object Tracking)",
@@ -409,7 +539,15 @@ const Project = () => {
           "실시간 비디오 스트리밍 및 객체 추적 결과 웹 인터페이스 개발",
         ],
         video: "/drone.mp4",
-        github: "https://github.com/seungyong/drone",
+        btns: [
+          {
+            title: "Github",
+            url: "https://github.com/seungyong/drone",
+            svgEle: (
+              <Image src="/github.svg" alt="GitHub" width={24} height={24} />
+            ),
+          },
+        ],
       },
       {
         name: "개인 포트폴리오 웹사이트",
@@ -439,7 +577,15 @@ const Project = () => {
           "프로젝트 및 경력 소개 페이지 개발",
           "배포 및 유지보수",
         ],
-        github: "https://github.com/seungyong/portfolio",
+        btns: [
+          {
+            title: "Github",
+            url: "https://github.com/seungyong/portfolio",
+            svgEle: (
+              <Image src="/github.svg" alt="GitHub" width={24} height={24} />
+            ),
+          },
+        ],
       },
     ],
     [],
@@ -469,10 +615,10 @@ const Project = () => {
           className={styles.filterToggle}
           onClick={handleToggle}
           aria-pressed={showImportantOnly}
-          aria-label="중요 프로젝트만 보기"
+          aria-label="주요 프로젝트만 보기"
         >
           <span className={styles.toggleIcon}>★</span>
-          <span>중요 프로젝트만</span>
+          <span>주요 프로젝트만</span>
         </button>
         <hr className={styles.divider} />
       </div>
