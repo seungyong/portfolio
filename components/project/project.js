@@ -99,6 +99,18 @@ const Project = () => {
               <Image src="/github.svg" alt="GitHub" width={24} height={24} />
             ),
           },
+          {
+            title: "트러블 슈팅",
+            url: "/trouble-shooting/helpme",
+            svgEle: (
+              <Image
+                src="/trouble-shooting.svg"
+                alt="트러블 슈팅"
+                width={24}
+                height={24}
+              />
+            ),
+          },
         ],
         isImportant: true,
         isService: true,

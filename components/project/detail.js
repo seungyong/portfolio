@@ -127,18 +127,21 @@ const Detail = ({ project }) => {
           </div>
           <div className={styles.btnBox}>
             {project.btns.map((btn, index) => (
-              <button key={index} className={styles.linkBtn}>
-                {btn.svgEle}
-                <a
-                  href={btn.url}
-                  target={
-                    btn.url.includes("trouble-shooting") ? "_self" : "_blank"
+              <button
+                key={index}
+                className={styles.linkBtn}
+                onClick={() => {
+                  // Open in same tab if trouble-shooting, new tab otherwise
+                  if (btn.url.includes("trouble-shooting")) {
+                    window.location.href = btn.url;
+                  } else {
+                    window.open(btn.url, "_blank", "noopener,noreferrer");
                   }
-                  rel="noopener noreferrer"
-                  className={styles.link}
-                >
-                  {btn.title}
-                </a>
+                }}
+                type="button"
+              >
+                {btn.svgEle}
+                <span className={styles.link}>{btn.title}</span>
               </button>
             ))}
           </div>

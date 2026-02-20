@@ -1,13 +1,14 @@
 "use client";
 
+import React from "react";
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 import articles from "./articles";
 import styles from "../styles/page.module.scss";
+import { ArrowLeft } from "lucide-react";
 
-export default function GlobaTroubleShootingListPage() {
+export default function HelpmePage() {
   const navigate = useRouter();
 
   return (
@@ -16,16 +17,16 @@ export default function GlobaTroubleShootingListPage() {
         <ArrowLeft className={styles.backIcon} aria-hidden />
         뒤로 가기
       </Link>
-      <h1 className={styles.title}>Globa</h1>
+      <h1 className={styles.title}>Helpme</h1>
       <p className={styles.description}>
-        Globa 프로젝트에서 겪은 트러블 슈팅 목록입니다.
+        Helpme 프로젝트에서 겪은 트러블 슈팅 목록입니다.
       </p>
 
       <ul className={styles.articleList}>
         {articles.map(({ slug, title }) => (
           <li key={slug}>
             <Link
-              href={`/trouble-shooting/globa/${slug}`}
+              href={`/trouble-shooting/helpme/${slug}`}
               className={styles.card}
             >
               <span className={styles.cardTitle}>{title}</span>
