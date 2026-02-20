@@ -101,6 +101,7 @@ const Project = () => {
           },
         ],
         isImportant: true,
+        isService: true,
       },
       {
         name: "Globa",

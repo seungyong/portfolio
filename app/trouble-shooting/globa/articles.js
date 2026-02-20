@@ -6,6 +6,6 @@
 // eslint-disable-next-line import/no-anonymous-default-export
 export default [
   { slug: "repository-refactoring", title: "유지보수의 문제" },
-  { slug: "stress-testing", title: "스트레스 테스트" },
+  { slug: "stress-testing", title: "부하 테스트" },
   { slug: "kafka", title: "Kafka 하드웨어 제약" },
 ];

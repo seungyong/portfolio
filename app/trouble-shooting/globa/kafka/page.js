@@ -16,8 +16,9 @@ export default function KafkaPage() {
             Kafka를 사용하였습니다.
           </p>
           <p>
-            하지만, 2차 개발 당시, Kafka를 사용함에 따라, AWS EC2에서는{" "}
-            <b>메모리 부족 문제</b>로 Kafka가 종료되는 문제가 발생했습니다.
+            하지만, 2차 개발 당시, Kafka를 사용함에 따라 AWS EC2의 무료
+            티어에서는 <b>메모리 부족 문제</b>로 Kafka가 종료되는 문제가
+            발생했습니다.
           </p>
         </>
       }

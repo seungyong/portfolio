@@ -35,6 +35,9 @@ const Detail = ({ project }) => {
               {project.isImportant && (
                 <span className={styles.important}>주요 프로젝트</span>
               )}
+              {project.isService && (
+                <span className={styles.service}>서비스 중</span>
+              )}
             </div>
           </CardTitle>
           {project.date.length > 1 ? (

@@ -50,6 +50,18 @@
       color: #ffffff;
       font-size: 0.75rem;
     }
+
+    .service {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 1rem;
+      padding: 0.25rem 0.5rem;
+      border-radius: 12px;
+      background-color: #4caf50;
+      color: #ffffff;
+      font-size: 0.75rem;
+    }
   }
 
   .date {
