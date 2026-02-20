@@ -1,12 +1,12 @@
 "use client";
 
 import React, { useCallback, useMemo, useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 import styles from "./project.module.scss";
-
 import Title from "../title/title";
 import Detail from "./detail";
-import Image from "next/image";
 
 const Project = () => {
   const [showImportantOnly, setShowImportantOnly] = useState(false);
@@ -188,6 +188,18 @@ const Project = () => {
             url: "https://github.com/Globa-Seoil-Univ/globa-backend",
             svgEle: (
               <Image src="/github.svg" alt="GitHub" width={24} height={24} />
+            ),
+          },
+          {
+            title: "트러블 슈팅",
+            url: "/trouble-shooting/globa",
+            svgEle: (
+              <Image
+                src="/trouble-shooting.svg"
+                alt="트러블 슈팅"
+                width={24}
+                height={24}
+              />
             ),
           },
         ],
@@ -620,6 +632,20 @@ const Project = () => {
           <span className={styles.toggleIcon}>★</span>
           <span>주요 프로젝트만</span>
         </button>
+        <Link
+          href="/trouble-shooting"
+          className={styles.troubleShootingLink}
+          aria-label="트러블 슈팅 페이지로 이동"
+        >
+          <Image
+            src="/trouble-shooting.svg"
+            alt=""
+            width={20}
+            height={20}
+            aria-hidden
+          />
+          <span>모든 트러블 슈팅 목록</span>
+        </Link>
         <hr className={styles.divider} />
       </div>
       <div className={styles.projects}>

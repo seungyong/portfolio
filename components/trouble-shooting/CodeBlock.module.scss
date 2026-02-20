@@ -1,0 +1,24 @@
+.wrapper {
+  margin: 1rem 0;
+  border-radius: var(--radius);
+  overflow: auto;
+  background: hsl(var(--muted));
+}
+
+.pre {
+  margin: 0;
+  padding: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+    monospace;
+}
+
+// highlight.js 테마가 .hljs를 사용하므로 code에 클래스 추가
+.pre :global(.hljs) {
+  padding: 0;
+  background: transparent;
+}

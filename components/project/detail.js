@@ -128,7 +128,9 @@ const Detail = ({ project }) => {
                 {btn.svgEle}
                 <a
                   href={btn.url}
-                  target="_blank"
+                  target={
+                    btn.url.includes("trouble-shooting") ? "_self" : "_blank"
+                  }
                   rel="noopener noreferrer"
                   className={styles.link}
                 >

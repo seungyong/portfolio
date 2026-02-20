@@ -10,7 +10,7 @@ import Certificate from "@/components/certificate/certificate";
 
 import styles from "./main.module.scss";
 
-const Main = () => {
+const page = () => {
   return (
     <>
       <Analytics />
@@ -29,4 +29,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default page;
