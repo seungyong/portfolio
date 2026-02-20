@@ -8,9 +8,9 @@ import Experience from "@/components/experience/experience";
 import Project from "@/components/project/project";
 import Certificate from "@/components/certificate/certificate";
 
-import styles from "./page.module.scss";
+import styles from "./main.module.scss";
 
-const page = () => {
+const Main = () => {
   return (
     <>
       <Analytics />
@@ -29,4 +29,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Main;
