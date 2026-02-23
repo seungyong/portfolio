@@ -1,0 +1,39 @@
+.wrapper {
+  margin: 1rem 0;
+  padding: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: hsl(var(--muted) / 0.5);
+  border-left: 4px solid hsl(var(--muted-foreground) / 0.35);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: hsl(var(--muted-foreground));
+  background: hsl(var(--muted) / 0.5);
+}
+
+.icon {
+  flex-shrink: 0;
+  color: hsl(45 93% 47%); /* 밝은 노란색 전구 */
+}
+
+.content {
+  padding: 1rem;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: hsl(var(--foreground));
+}
+
+.content p {
+  margin: 0;
+}
+
+.content p + p {
+  margin-top: 0.5rem;
+}

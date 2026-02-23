@@ -30,7 +30,10 @@ const Detail = ({ project }) => {
       <Card className={styles.card}>
         <CardHeader>
           <CardTitle>
-            <div className={styles.titleBox}>
+            <div
+              className={styles.titleBox}
+              id={project.slug || project.name.toLowerCase()}
+            >
               <span className={styles.title}>{project.name}</span>
               {project.isImportant && (
                 <span className={styles.important}>주요 프로젝트</span>

@@ -14,6 +14,7 @@ const Project = () => {
     () => [
       {
         name: "Helpme.md",
+        slug: "helpme",
         descriptions: [
           "취준생 및 학생 등 개발의 입문한 사람들이 README.md 작성에 대한 어려움을 겪는 문제를 해결하기 위해 개발된 웹 애플리케이션입니다.",
           "사용자들은 Github App을 통해 자신의 프로젝트를 연동하고, 프로젝트의 정보를 읽어 README.md 파일을 자동으로 생성할 수 있습니다.",
@@ -117,6 +118,7 @@ const Project = () => {
       },
       {
         name: "Globa",
+        slug: "globa",
         descriptions: [
           "AI 시장의 폭발적인 성장 및 디지털 수업을 이용한 교육 방식의 변화에 따라, AI를 활용한 STT 모바일 앱 개발하였습니다.",
           "STT(음성인식) 기술을 활용하여 사용자의 음성을 텍스트로 변환하고, 이를 기반으로 다양한 기능을 제공합니다.",
