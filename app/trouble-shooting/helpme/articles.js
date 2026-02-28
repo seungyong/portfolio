@@ -3,4 +3,5 @@ export default [
   { slug: "github-actions-env", title: "Github Actions 환경 변수 적용 문제" },
   { slug: "race-condition", title: "동시 요청 문제" },
   { slug: "ui-ux-improvement", title: "UI/UX 개선 문제" },
+  { slug: "server-down", title: "서버 다운 문제" },
 ];
